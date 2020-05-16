@@ -356,3 +356,6 @@ MigrationBackup/
 **/appsettings.development.json
 **/appsettings.staging.json
 **/appsettings.production.json
+
+# MacOS
+.DS_Store

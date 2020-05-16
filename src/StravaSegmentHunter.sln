@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StravaSegmentHunter.Web", "StravaSegmentHunter.Web\StravaSegmentHunter.Web.csproj", "{D963630A-63D7-40E8-82C2-652D07708103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StravaSegmentHunter.OAuth", "StravaSegmentHunter.OAuth\StravaSegmentHunter.OAuth.csproj", "{FBB5E992-470A-45A1-A33B-5FA1E393FD86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StravaSegmentHunter.Domain", "StravaSegmentHunter.Domain\StravaSegmentHunter.Domain.csproj", "{94E2CB3B-20F8-4712-88C6-BE056809E57B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D963630A-63D7-40E8-82C2-652D07708103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D963630A-63D7-40E8-82C2-652D07708103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D963630A-63D7-40E8-82C2-652D07708103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D963630A-63D7-40E8-82C2-652D07708103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBB5E992-470A-45A1-A33B-5FA1E393FD86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB5E992-470A-45A1-A33B-5FA1E393FD86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB5E992-470A-45A1-A33B-5FA1E393FD86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB5E992-470A-45A1-A33B-5FA1E393FD86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94E2CB3B-20F8-4712-88C6-BE056809E57B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94E2CB3B-20F8-4712-88C6-BE056809E57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94E2CB3B-20F8-4712-88C6-BE056809E57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94E2CB3B-20F8-4712-88C6-BE056809E57B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

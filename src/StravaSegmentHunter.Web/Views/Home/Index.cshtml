@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p><a asp-controller="Authentication" asp-action="Index">Login with Strava</a>.</p>
+</div>
+
+@if (User?.Identity?.IsAuthenticated ?? false)
+{
+    <h1>Welcome, @User.Identity.Name</h1>
+    <p>Access token: @ViewBag.AccessToken</p>
+    <p>Expires token: @ViewBag.ExpiresAt</p>
+                                        
+    <p><a asp-controller="Home" asp-action="Test">Test api call</a>.</p>
+}
