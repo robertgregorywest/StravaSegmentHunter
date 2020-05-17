@@ -10,7 +10,7 @@ namespace StravaSegmentHunter.Web.Controllers
         [HttpGet("~/signin")]
         public IActionResult Index()
         {
-            return Challenge(new AuthenticationProperties { RedirectUri = "/" }, StravaAuthenticationDefaults.AuthenticationScheme);
+            return Challenge(new AuthenticationProperties { RedirectUri = "/" }, AuthenticationDefaults.AuthenticationScheme);
         }
 
         [HttpGet("~/signout")]

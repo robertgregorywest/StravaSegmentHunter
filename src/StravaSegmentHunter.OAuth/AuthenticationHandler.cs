@@ -12,13 +12,13 @@ using Microsoft.Extensions.Options;
 
 namespace StravaSegmentHunter.OAuth
 {
-    public class StravaAuthenticationHandler : OAuthHandler<StravaAuthenticationOptions>
+    public class AuthenticationHandler : OAuthHandler<AuthenticationOptions>
     {
         /// <summary>
         /// Authentication handler for Strava authentication
         /// </summary>
-        public StravaAuthenticationHandler(
-            [NotNull] IOptionsMonitor<StravaAuthenticationOptions> options,
+        public AuthenticationHandler(
+            [NotNull] IOptionsMonitor<AuthenticationOptions> options,
             [NotNull] ILoggerFactory factory,
             [NotNull] UrlEncoder encoder,
             [NotNull] ISystemClock clock)

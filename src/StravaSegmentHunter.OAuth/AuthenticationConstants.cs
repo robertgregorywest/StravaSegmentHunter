@@ -1,9 +1,9 @@
 namespace StravaSegmentHunter.OAuth
 {
     /// <summary>
-    /// Contains constants specific to the <see cref="StravaAuthenticationHandler"/>.
+    /// Contains constants specific to the <see cref="AuthenticationHandler"/>.
     /// </summary>
-    public static class StravaAuthenticationConstants
+    public static class AuthenticationConstants
     {
         public static class Claims
         {

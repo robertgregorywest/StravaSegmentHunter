@@ -22,7 +22,7 @@ namespace StravaSegmentHunter.OAuth.AccessTokenManagement
             IHttpClientFactory httpClientFactory)
         {
             _configService = configService;
-            _httpClient = httpClientFactory.CreateClient(AccessTokenManagementDefaults.BackChannelHttpClientName);
+            _httpClient = httpClientFactory.CreateClient(AuthenticationDefaults.BackChannelHttpClientName);
         }
 
         /// <inheritdoc/>

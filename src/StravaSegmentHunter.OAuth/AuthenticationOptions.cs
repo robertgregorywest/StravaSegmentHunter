@@ -1,24 +1,30 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.OAuth;
-using static StravaSegmentHunter.OAuth.StravaAuthenticationConstants;
+using static StravaSegmentHunter.OAuth.AuthenticationConstants;
 
 namespace StravaSegmentHunter.OAuth
 {
     /// <summary>
-    /// Defines a set of options used by <see cref="StravaAuthenticationHandler"/>.
+    /// Defines a set of options used by <see cref="AuthenticationHandler"/>.
     /// </summary>
-    public class StravaAuthenticationOptions : OAuthOptions
+    public class AuthenticationOptions : OAuthOptions
     {
-        public StravaAuthenticationOptions()
+        /// <summary>
+        /// Gets or sets the URI where the client will be redirected to deauthorize.
+        /// </summary>
+        public string DeauthorizationEndpoint { get; set; }
+        
+        public AuthenticationOptions()
         {
-            ClaimsIssuer = StravaAuthenticationDefaults.Issuer;
+            ClaimsIssuer = AuthenticationDefaults.Issuer;
 
-            CallbackPath = StravaAuthenticationDefaults.CallbackPath;
+            CallbackPath = AuthenticationDefaults.CallbackPath;
 
-            AuthorizationEndpoint = StravaAuthenticationDefaults.AuthorizationEndpoint;
-            TokenEndpoint = StravaAuthenticationDefaults.TokenEndpoint;
-            UserInformationEndpoint = StravaAuthenticationDefaults.UserInformationEndpoint;
+            AuthorizationEndpoint = AuthenticationDefaults.AuthorizationEndpoint;
+            TokenEndpoint = AuthenticationDefaults.TokenEndpoint;
+            UserInformationEndpoint = AuthenticationDefaults.UserInformationEndpoint;
+            DeauthorizationEndpoint = AuthenticationDefaults.DeauthorizationEndpoint;
 
             ClaimActions.MapJsonKey(ClaimTypes.NameIdentifier, "id");
             ClaimActions.MapJsonKey(ClaimTypes.Name, "username");

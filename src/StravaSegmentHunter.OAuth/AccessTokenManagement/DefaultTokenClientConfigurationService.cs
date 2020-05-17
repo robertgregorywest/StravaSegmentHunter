@@ -1,12 +1,5 @@
-using System;
-using System.Linq;
-using System.Threading.Tasks;
 using IdentityModel.Client;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.OAuth;
 using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Protocols;
-using StravaSegmentHunter.OAuth;
 
 namespace StravaSegmentHunter.OAuth.AccessTokenManagement
 {
@@ -15,13 +8,13 @@ namespace StravaSegmentHunter.OAuth.AccessTokenManagement
     /// </summary>
     public class DefaultTokenClientConfigurationService : ITokenClientConfigurationService
     {
-        private readonly IOptionsMonitor<StravaAuthenticationOptions> _stravaOptions;
+        private readonly IOptionsMonitor<AuthenticationOptions> _stravaOptions;
 
         /// <summary>
         /// ctor
         /// </summary>
         /// <param name="stravaOptions"></param>
-        public DefaultTokenClientConfigurationService(IOptionsMonitor<StravaAuthenticationOptions> stravaOptions)
+        public DefaultTokenClientConfigurationService(IOptionsMonitor<AuthenticationOptions> stravaOptions)
         {
             _stravaOptions = stravaOptions;
         }
@@ -29,7 +22,7 @@ namespace StravaSegmentHunter.OAuth.AccessTokenManagement
         /// <inheritdoc />
         public virtual RefreshTokenRequest GetRefreshTokenRequest()
         {
-            var options = _stravaOptions.Get(StravaAuthenticationDefaults.AuthenticationScheme);
+            var options = _stravaOptions.Get(AuthenticationDefaults.AuthenticationScheme);
 
             var requestDetails = new RefreshTokenRequest
             {
@@ -45,17 +38,16 @@ namespace StravaSegmentHunter.OAuth.AccessTokenManagement
         /// <inheritdoc />
         public virtual TokenRevocationRequest GetTokenRevocationRequest()
         {
-            var options = _stravaOptions.Get(StravaAuthenticationDefaults.AuthenticationScheme);
+            var options = _stravaOptions.Get(AuthenticationDefaults.AuthenticationScheme);
             
             var requestDetails = new TokenRevocationRequest
             {
-                Address = options.TokenEndpoint,
+                Address = options.DeauthorizationEndpoint,
                 ClientId = options.ClientId,
                 ClientSecret = options.ClientSecret
             };
 
             return requestDetails;
         }
-        
     }
 }

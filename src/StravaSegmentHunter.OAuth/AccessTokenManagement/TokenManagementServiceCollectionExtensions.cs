@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Net.Http;
+using JetBrains.Annotations;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using StravaSegmentHunter.OAuth;
 using StravaSegmentHunter.OAuth.AccessTokenManagement;
 
 // ReSharper disable once CheckNamespace
@@ -33,7 +35,7 @@ namespace Microsoft.Extensions.DependencyInjection
             services.TryAddTransient<ITokenEndpointService, TokenEndpointService>();
 
             // TODO does Strava support this?
-            services.AddHttpClient(AccessTokenManagementDefaults.BackChannelHttpClientName);
+            services.AddHttpClient(AuthenticationDefaults.BackChannelHttpClientName);
 
             services.AddTransient<UserAccessTokenHandler>();
 
@@ -49,6 +51,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <param name="name">The name of the client.</param>
         /// <param name="configureClient">Additional configuration.</param>
         /// <returns></returns>
+        [UsedImplicitly]
         public static IHttpClientBuilder AddUserAccessTokenClient(this IServiceCollection services, string name, Action<HttpClient> configureClient = null)
         {
             if (configureClient != null)

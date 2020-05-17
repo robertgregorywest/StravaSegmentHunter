@@ -2,7 +2,9 @@ using System;
 using JetBrains.Annotations;
 using Microsoft.AspNetCore.Authentication;
 using StravaSegmentHunter.OAuth;
+using StravaAuthenticationOptions = StravaSegmentHunter.OAuth.AuthenticationOptions;
 
+// ReSharper disable once CheckNamespace
 namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
@@ -11,18 +13,19 @@ namespace Microsoft.Extensions.DependencyInjection
     public static class StravaAuthenticationExtensions
     {
         /// <summary>
-        /// Adds <see cref="StravaAuthenticationHandler"/> to the specified
+        /// Adds <see cref="AuthenticationHandler"/> to the specified
         /// <see cref="AuthenticationBuilder"/>, which enables Strava authentication capabilities.
         /// </summary>
         /// <param name="builder">The authentication builder.</param>
         /// <returns>A reference to this instance after the operation has completed.</returns>
+        [UsedImplicitly]
         public static AuthenticationBuilder AddStrava([NotNull] this AuthenticationBuilder builder)
         {
-            return builder.AddStrava(StravaAuthenticationDefaults.AuthenticationScheme, options => { });
+            return builder.AddStrava(AuthenticationDefaults.AuthenticationScheme, options => { });
         }
 
         /// <summary>
-        /// Adds <see cref="StravaAuthenticationHandler"/> to the specified
+        /// Adds <see cref="AuthenticationHandler"/> to the specified
         /// <see cref="AuthenticationBuilder"/>, which enables Strava authentication capabilities.
         /// </summary>
         /// <param name="builder">The authentication builder.</param>
@@ -32,11 +35,11 @@ namespace Microsoft.Extensions.DependencyInjection
             [NotNull] this AuthenticationBuilder builder,
             [NotNull] Action<StravaAuthenticationOptions> configuration)
         {
-            return builder.AddStrava(StravaAuthenticationDefaults.AuthenticationScheme, configuration);
+            return builder.AddStrava(AuthenticationDefaults.AuthenticationScheme, configuration);
         }
 
         /// <summary>
-        /// Adds <see cref="StravaAuthenticationHandler"/> to the specified
+        /// Adds <see cref="AuthenticationHandler"/> to the specified
         /// <see cref="AuthenticationBuilder"/>, which enables Strava authentication capabilities.
         /// </summary>
         /// <param name="builder">The authentication builder.</param>
@@ -48,11 +51,11 @@ namespace Microsoft.Extensions.DependencyInjection
             [NotNull] string scheme,
             [NotNull] Action<StravaAuthenticationOptions> configuration)
         {
-            return builder.AddStrava(scheme, StravaAuthenticationDefaults.DisplayName, configuration);
+            return builder.AddStrava(scheme, AuthenticationDefaults.DisplayName, configuration);
         }
 
         /// <summary>
-        /// Adds <see cref="StravaAuthenticationHandler"/> to the specified
+        /// Adds <see cref="AuthenticationHandler"/> to the specified
         /// <see cref="AuthenticationBuilder"/>, which enables Strava authentication capabilities.
         /// </summary>
         /// <param name="builder">The authentication builder.</param>
@@ -66,7 +69,7 @@ namespace Microsoft.Extensions.DependencyInjection
             [CanBeNull] string caption,
             [NotNull] Action<StravaAuthenticationOptions> configuration)
         {
-            return builder.AddOAuth<StravaAuthenticationOptions, StravaAuthenticationHandler>(scheme, caption, configuration);
+            return builder.AddOAuth<StravaAuthenticationOptions, AuthenticationHandler>(scheme, caption, configuration);
         }
     }
 }

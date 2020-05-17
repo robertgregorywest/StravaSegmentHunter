@@ -38,7 +38,7 @@ namespace StravaSegmentHunter.Web
             services.AddAuthentication(options =>
             {
                 options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = StravaAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = AuthenticationDefaults.AuthenticationScheme;
             })
             .AddCookie()
             .AddStrava(options =>
@@ -51,13 +51,10 @@ namespace StravaSegmentHunter.Web
             });
             
             // adds user access token management
-            services.AddAccessTokenManagement(options =>
-                {
-                    options.User.Scheme = StravaAuthenticationDefaults.AuthenticationScheme;
-                })
+            services.AddAccessTokenManagement()
             .ConfigureBackchannelHttpClient(options =>
             {
-                options.BaseAddress = new Uri(StravaAuthenticationDefaults.TokenEndpoint);
+                options.BaseAddress = new Uri(AuthenticationDefaults.TokenEndpoint);
             })
             .AddTransientHttpErrorPolicy(policy => policy.WaitAndRetryAsync(new[]
             {
@@ -66,10 +63,10 @@ namespace StravaSegmentHunter.Web
                 TimeSpan.FromSeconds(3)
             }));
 
-            // registers a typed HTTP client with token management support
+            // registering a typed HTTP client with token management support
             services.AddHttpClient<StravaClient>(client =>
             {
-                client.BaseAddress = new Uri(StravaAuthenticationDefaults.BaseAddress);
+                client.BaseAddress = new Uri(AuthenticationDefaults.BaseAddress);
             })
             .AddUserAccessTokenHandler();
         }

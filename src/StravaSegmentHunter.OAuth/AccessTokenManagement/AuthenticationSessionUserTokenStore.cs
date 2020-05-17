@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using System;
 using System.Globalization;
@@ -21,8 +20,7 @@ namespace StravaSegmentHunter.OAuth.AccessTokenManagement
         /// ctor
         /// </summary>
         /// <param name="contextAccessor"></param>
-        public AuthenticationSessionUserTokenStore(
-            IHttpContextAccessor contextAccessor)
+        public AuthenticationSessionUserTokenStore(IHttpContextAccessor contextAccessor)
         {
             _contextAccessor = contextAccessor;
         }

@@ -6,15 +6,15 @@ namespace StravaSegmentHunter.OAuth
     /// <summary>
     /// Default values used by the Strava authentication middleware.
     /// </summary>
-    public static class StravaAuthenticationDefaults
+    public static class AuthenticationDefaults
     {
         /// <summary>
-        /// Default value for <see cref="AuthenticationScheme.Name"/>.
+        /// Default value for <see cref="Microsoft.AspNetCore.Authentication.AuthenticationScheme.Name"/>.
         /// </summary>
         public const string AuthenticationScheme = "Strava";
 
         /// <summary>
-        /// Default value for <see cref="AuthenticationScheme.DisplayName"/>.
+        /// Default value for <see cref="Microsoft.AspNetCore.Authentication.AuthenticationScheme.DisplayName"/>.
         /// </summary>
         public const string DisplayName = "Strava";
 
@@ -37,6 +37,11 @@ namespace StravaSegmentHunter.OAuth
         /// Default value for <see cref="OAuthOptions.TokenEndpoint"/>.
         /// </summary>
         public const string TokenEndpoint = "https://www.strava.com/oauth/token";
+        
+        /// <summary>
+        /// Default value for Deauthorization endpoint/>.
+        /// </summary>
+        public const string DeauthorizationEndpoint = "https://www.strava.com/oauth/deauthorize";
 
         /// <summary>
         /// Default value for <see cref="OAuthOptions.UserInformationEndpoint"/>.
@@ -47,5 +52,10 @@ namespace StravaSegmentHunter.OAuth
         /// Base address for API calls
         /// </summary>
         public const string BaseAddress = "https://www.strava.com/api/v3/";
+        
+        /// <summary>
+        /// Name of the back-channel HTTP client
+        /// </summary>
+        public const string BackChannelHttpClientName = "StravaSegmentHunter.OAuth.AccessTokenManagement.TokenEndpointService";
     }
 }

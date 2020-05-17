@@ -99,7 +99,7 @@ namespace StravaSegmentHunter.OAuth.AccessTokenManagement
         {
             var userToken = await _userTokenStore.GetTokenAsync(_httpContextAccessor.HttpContext.User);
 
-            if (!string.IsNullOrEmpty(userToken?.RefreshToken))
+            if (!string.IsNullOrEmpty(userToken?.AccessToken))
             {
                 var response = await _tokenEndpointService.RevokeAccessTokenAsync(userToken.AccessToken);
 

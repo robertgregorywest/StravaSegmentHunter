@@ -3,7 +3,7 @@ using IdentityModel.Client;
 namespace StravaSegmentHunter.OAuth.AccessTokenManagement
 {
     /// <summary>
-    /// Retrieves request details for client credentials, refresh and revocation requests
+    /// Retrieves request details for refresh and revocation requests
     /// </summary>
     public interface ITokenClientConfigurationService
     {

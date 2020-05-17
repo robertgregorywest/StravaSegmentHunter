@@ -29,12 +29,9 @@ namespace StravaSegmentHunter.OAuth.AccessTokenManagement
         /// <returns></returns>
         public IHttpClientBuilder ConfigureBackchannelHttpClient(Action<HttpClient> configureClient = null)
         {
-            if (configureClient is null)
-            {
-                return Services.AddHttpClient(AccessTokenManagementDefaults.BackChannelHttpClientName);
-            }
-
-            return Services.AddHttpClient(AccessTokenManagementDefaults.BackChannelHttpClientName, configureClient);
+            return configureClient is null
+                ? Services.AddHttpClient(AuthenticationDefaults.BackChannelHttpClientName)
+                : Services.AddHttpClient(AuthenticationDefaults.BackChannelHttpClientName, configureClient);
         }
     }
 }
