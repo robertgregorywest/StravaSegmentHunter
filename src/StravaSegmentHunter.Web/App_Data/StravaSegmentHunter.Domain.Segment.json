@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Oxford Chain Gang",
+    "stravaId": 622750,
+    "distance": 37693.7,
+    "id": "b37acf3f-8035-44c0-aa10-024e0a8a2d55"
+  },
+  {
+    "name": "Stadhampton (CC118A) 10 Mile TT",
+    "stravaId": 657750,
+    "distance": 16365.3,
+    "id": "af7ecde5-3b65-4bfb-9dd8-b6e732560213"
+  },
+  {
+    "name": "E2/10",
+    "stravaId": 770427,
+    "distance": 16063.1,
+    "id": "71ef21dd-823c-4346-943c-e376b6d9ce31"
+  },
+  {
+    "name": "A25/11",
+    "stravaId": 795930,
+    "distance": 40076.9,
+    "id": "f37e7ae1-bdd2-4cd4-9213-7ca254ea8489"
+  },
+  {
+    "name": "E2/25",
+    "stravaId": 820299,
+    "distance": 39955.6,
+    "id": "efd4de70-ef00-4ba4-ad17-c168eef59d88"
+  },
+  {
+    "name": "F11/10",
+    "stravaId": 892764,
+    "distance": 16154.8,
+    "id": "d7b8d7ef-ea3f-4dbe-ac90-3940baf86c93"
+  },
+  {
+    "name": "Islip climb",
+    "stravaId": 1053973,
+    "distance": 1583.29,
+    "id": "983f9b0a-14df-432b-b917-45607ad93d6a"
+  },
+  {
+    "name": "H10/181",
+    "stravaId": 1109155,
+    "distance": 15973.8,
+    "id": "9642fe2d-c1a8-4e36-ab0b-60b0f7c80f6a"
+  },
+  {
+    "name": "H25/17",
+    "stravaId": 1298618,
+    "distance": 40323.7,
+    "id": "73e39c9f-8946-4aa6-93ec-271dd7cb6cd1"
+  },
+  {
+    "name": "k41/10",
+    "stravaId": 1322903,
+    "distance": 16129.3,
+    "id": "f7e7372f-a3eb-4a08-af3c-5bf5995b2cce"
+  },
+  {
+    "name": "Hanney drag",
+    "stravaId": 1444363,
+    "distance": 2423.44,
+    "id": "c1cbbd23-f607-4e04-8b30-accbb374943e"
+  },
+  {
+    "name": "Fencott-Murcott",
+    "stravaId": 2107143,
+    "distance": 753.737,
+    "id": "e6166391-eca8-4671-b8e6-83429618b3b6"
+  },
+  {
+    "name": "king of kirtlington",
+    "stravaId": 2317452,
+    "distance": 1277.48,
+    "id": "ff2de4f4-45e1-4c57-83f3-012a6fa4f955"
+  },
+  {
+    "name": "mid segment for Drayton dash",
+    "stravaId": 2458968,
+    "distance": 844.371,
+    "id": "045f005f-68eb-4d0f-b823-a1b9cfe6bba3"
+  },
+  {
+    "name": "First turn to bletchingdon",
+    "stravaId": 3194653,
+    "distance": 3442.62,
+    "id": "0cfdad67-a0be-4ddd-9b97-626b97188675"
+  },
+  {
+    "name": "Hanney Road sprint",
+    "stravaId": 3480294,
+    "distance": 1929.92,
+    "id": "e727a379-ad37-42e4-bbc3-7753f5ec82fc"
+  },
+  {
+    "name": "H10/22 10 mile TT course",
+    "stravaId": 3702898,
+    "distance": 15989.3,
+    "id": "9ac1a616-07f5-4376-b28a-12726369512e"
+  },
+  {
+    "name": "Foxcombe hill - Just the hill",
+    "stravaId": 3752866,
+    "distance": 1076.21,
+    "id": "22bc613d-0362-4b5f-9d6f-208f399d0738"
+  },
+  {
+    "name": "R25/3L 25 mile TT course",
+    "stravaId": 4020063,
+    "distance": 40342.6,
+    "id": "6a82a99b-361e-4f83-bed7-6b8296777eab"
+  },
+  {
+    "name": "S\u0027Leigh to Oxford Hill",
+    "stravaId": 4108304,
+    "distance": 2363.4,
+    "id": "a9ed3a06-42fc-4d09-b855-df63046db638"
+  },
+  {
+    "name": "Woodpery Climb!",
+    "stravaId": 4133955,
+    "distance": 1546.2,
+    "id": "2aa24975-d211-4bd8-ad62-7df9b04a0bec"
+  },
+  {
+    "name": "Park Lane Punt",
+    "stravaId": 4788960,
+    "distance": 1680.1,
+    "id": "c7d96d4d-e098-4a9c-82eb-aee752ef5fa2"
+  },
+  {
+    "name": "Shifford Diversion",
+    "stravaId": 5348431,
+    "distance": 3148.7,
+    "id": "43c4aa20-b158-45ef-8752-e371ae2a9dff"
+  },
+  {
+    "name": "Steventon 50 to La Fontana",
+    "stravaId": 5609698,
+    "distance": 4687.1,
+    "id": "3da1ed3c-8f4c-4a51-884b-05a3c4a7bfe9"
+  },
+  {
+    "name": "NRC - Walbury Hill Climb Crown",
+    "stravaId": 5641307,
+    "distance": 1805.9,
+    "id": "4f0517ef-d2f6-42e8-bdee-2a27e1c117e4"
+  },
+  {
+    "name": "Crabtree to Wood Farm",
+    "stravaId": 5977265,
+    "distance": 1622.9,
+    "id": "618f73b0-52ad-4342-9b4f-70fad041c56f"
+  },
+  {
+    "name": "goosey turn to park lane",
+    "stravaId": 6148472,
+    "distance": 2313.8,
+    "id": "a43cae4e-d5cd-43f9-a29e-1b9c068af706"
+  },
+  {
+    "name": "A338 Hanney - Garford Turn",
+    "stravaId": 6273240,
+    "distance": 2975.8,
+    "id": "c5ae0a6f-b179-47f6-86c3-e1783bf6b195"
+  },
+  {
+    "name": "Wychwood RC Hilly TT",
+    "stravaId": 7002056,
+    "distance": 58381.2,
+    "id": "02ce0c3d-2f54-45f1-ba17-a647e234e3c9"
+  },
+  {
+    "name": "Ducklington to Aston Straight",
+    "stravaId": 7151639,
+    "distance": 4578.1,
+    "id": "d5a7756c-8618-4f62-93f0-c431ffaae7e1"
+  },
+  {
+    "name": "Oxford Chain Gang",
+    "stravaId": 622750,
+    "distance": 37693.7,
+    "id": "75a08a06-de28-4374-a333-addb94691ca4"
+  },
+  {
+    "name": "Stadhampton (CC118A) 10 Mile TT",
+    "stravaId": 657750,
+    "distance": 16365.3,
+    "id": "d1c91dfd-5f94-4f00-a7c7-52a48c0a9dd6"
+  },
+  {
+    "name": "E2/10",
+    "stravaId": 770427,
+    "distance": 16063.1,
+    "id": "e2c6055a-6e3f-45f4-9c06-1e93b0265dd0"
+  },
+  {
+    "name": "A25/11",
+    "stravaId": 795930,
+    "distance": 40076.9,
+    "id": "1856ccad-d0ac-4155-8ba4-617e73e9369e"
+  },
+  {
+    "name": "E2/25",
+    "stravaId": 820299,
+    "distance": 39955.6,
+    "id": "c0b3f6de-4d67-49cb-adc2-d2f324d31794"
+  },
+  {
+    "name": "F11/10",
+    "stravaId": 892764,
+    "distance": 16154.8,
+    "id": "d78bdab7-fa3c-4b45-80da-c5b01370b2f1"
+  },
+  {
+    "name": "Islip climb",
+    "stravaId": 1053973,
+    "distance": 1583.29,
+    "id": "63ea0b57-c974-469d-9a19-ea340a6620c8"
+  },
+  {
+    "name": "H10/181",
+    "stravaId": 1109155,
+    "distance": 15973.8,
+    "id": "d9d15342-ef55-4ee4-aa45-ff4a47fd3a42"
+  },
+  {
+    "name": "H25/17",
+    "stravaId": 1298618,
+    "distance": 40323.7,
+    "id": "20e2e97b-24ab-4afc-ac82-58bdfba9311b"
+  },
+  {
+    "name": "k41/10",
+    "stravaId": 1322903,
+    "distance": 16129.3,
+    "id": "4ebc4c9b-9555-46c0-88a6-06faf76d4355"
+  },
+  {
+    "name": "Hanney drag",
+    "stravaId": 1444363,
+    "distance": 2423.44,
+    "id": "fd1ed696-23a9-4e3b-b1e6-a4cd273b6110"
+  },
+  {
+    "name": "Fencott-Murcott",
+    "stravaId": 2107143,
+    "distance": 753.737,
+    "id": "55a9e27f-bbc5-4d55-8373-c67349d0d241"
+  },
+  {
+    "name": "king of kirtlington",
+    "stravaId": 2317452,
+    "distance": 1277.48,
+    "id": "f3565995-2ff6-4da1-9233-82e3d3a014b0"
+  },
+  {
+    "name": "mid segment for Drayton dash",
+    "stravaId": 2458968,
+    "distance": 844.371,
+    "id": "d371153d-f5f9-4992-a3e6-d86554eb0f8a"
+  },
+  {
+    "name": "First turn to bletchingdon",
+    "stravaId": 3194653,
+    "distance": 3442.62,
+    "id": "3d2b63ea-6f8f-42d8-86a6-77e2453a510a"
+  },
+  {
+    "name": "Hanney Road sprint",
+    "stravaId": 3480294,
+    "distance": 1929.92,
+    "id": "241860ae-81a9-494c-85fa-413a9c4098cc"
+  },
+  {
+    "name": "H10/22 10 mile TT course",
+    "stravaId": 3702898,
+    "distance": 15989.3,
+    "id": "26746d02-df2a-4396-ab8b-32b157b54988"
+  },
+  {
+    "name": "Foxcombe hill - Just the hill",
+    "stravaId": 3752866,
+    "distance": 1076.21,
+    "id": "72795e63-89f6-4c61-8100-5410fbdab894"
+  },
+  {
+    "name": "R25/3L 25 mile TT course",
+    "stravaId": 4020063,
+    "distance": 40342.6,
+    "id": "c0b40f7b-80d8-4656-89e4-da3a2676d5a9"
+  },
+  {
+    "name": "S\u0027Leigh to Oxford Hill",
+    "stravaId": 4108304,
+    "distance": 2363.4,
+    "id": "684384ee-a7b1-42c1-995d-ef9ea43d70f2"
+  },
+  {
+    "name": "Woodpery Climb!",
+    "stravaId": 4133955,
+    "distance": 1546.2,
+    "id": "56590ce6-1e35-42db-b61e-e9509645aa2b"
+  },
+  {
+    "name": "Park Lane Punt",
+    "stravaId": 4788960,
+    "distance": 1680.1,
+    "id": "bd9679f6-5119-4de2-9146-2cb53b2f6246"
+  },
+  {
+    "name": "Shifford Diversion",
+    "stravaId": 5348431,
+    "distance": 3148.7,
+    "id": "b21c6898-5e53-4ee5-ae82-4966bc29f706"
+  },
+  {
+    "name": "Steventon 50 to La Fontana",
+    "stravaId": 5609698,
+    "distance": 4687.1,
+    "id": "dea44e12-3be0-4efd-afe1-88a7f2a8e959"
+  },
+  {
+    "name": "NRC - Walbury Hill Climb Crown",
+    "stravaId": 5641307,
+    "distance": 1805.9,
+    "id": "dd0c1b42-7001-488b-964b-843b4235ccaf"
+  },
+  {
+    "name": "Crabtree to Wood Farm",
+    "stravaId": 5977265,
+    "distance": 1622.9,
+    "id": "5fe21aa6-9cfa-4450-8276-bc7b6b512b44"
+  },
+  {
+    "name": "goosey turn to park lane",
+    "stravaId": 6148472,
+    "distance": 2313.8,
+    "id": "5ab4e3c6-20ad-4663-aaa9-8fcd73f8a404"
+  },
+  {
+    "name": "A338 Hanney - Garford Turn",
+    "stravaId": 6273240,
+    "distance": 2975.8,
+    "id": "46ef2f11-c944-4ebc-9ab6-68582fa0e155"
+  },
+  {
+    "name": "Wychwood RC Hilly TT",
+    "stravaId": 7002056,
+    "distance": 58381.2,
+    "id": "a7e345a0-6cfd-4aa0-8d37-81dec9e284af"
+  },
+  {
+    "name": "Ducklington to Aston Straight",
+    "stravaId": 7151639,
+    "distance": 4578.1,
+    "id": "0537d6b6-6c33-4ba2-9094-f96579b9b19c"
+  }
+]

@@ -17,6 +17,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Polly;
+using SimpleDatastore;
 using StravaSegmentHunter.OAuth;
 
 namespace StravaSegmentHunter.Web
@@ -69,6 +70,8 @@ namespace StravaSegmentHunter.Web
                 client.BaseAddress = new Uri(AuthenticationDefaults.BaseAddress);
             })
             .AddUserAccessTokenHandler();
+
+            services.AddSimpleDatastoreWithJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
