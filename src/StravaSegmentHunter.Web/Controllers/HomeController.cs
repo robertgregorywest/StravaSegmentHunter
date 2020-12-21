@@ -14,9 +14,9 @@ namespace StravaSegmentHunter.Web.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IRepository<Segment> _segmentRepository;
+        private readonly IWriteRepository<Segment, long> _segmentRepository;
 
-        public HomeController(ILogger<HomeController> logger, IRepository<Segment> segmentRepository)
+        public HomeController(ILogger<HomeController> logger, IWriteRepository<Segment, long> segmentRepository)
         {
             _logger = logger;
             _segmentRepository = segmentRepository;
@@ -36,23 +36,7 @@ namespace StravaSegmentHunter.Web.Controllers
 
             foreach (var element in document.RootElement.EnumerateArray())
             {
-                var segment = new Segment {Name = element.GetString("name")};
-                
-                if (element.TryGetProperty("id", out var idElement))
-                {
-                    if (idElement.TryGetInt64(out var segmentStravaId))
-                    {
-                        segment.StravaId = segmentStravaId;
-                    }
-                }
-                
-                if (element.TryGetProperty("distance", out var distanceElement))
-                {
-                    if (distanceElement.TryGetDouble(out var distance))
-                    {
-                        segment.Distance = distance;
-                    }
-                }
+                var segment = JsonSerializer.Deserialize<Segment>(element.GetRawText());
                 
                 await _segmentRepository.SaveAsync(segment);
             }

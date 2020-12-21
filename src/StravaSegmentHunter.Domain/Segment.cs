@@ -4,13 +4,10 @@ using SimpleDatastore;
 
 namespace StravaSegmentHunter.Domain
 {
-    public class Segment : PersistentObject
+    public class Segment : PersistentObject<long>
     {
         [JsonPropertyName("name")]
         public string Name { get; set; }
-        
-        [JsonPropertyName("stravaId")]
-        public long StravaId { get; set; }
         
         [JsonPropertyName("distance")]
         public double Distance { get; set; }
